@@ -1,0 +1,129 @@
+.footer {
+    margin-top: 50;
+    &__container {    // .footer__container
+
+    }
+
+    &__main {
+        display: flex;
+        gap: 50px;
+        @media (max-width:#{$md3}px) {
+            display: block;
+        }
+    }
+
+    &__column {    // .footer__column
+    }
+
+    &__row {    // .footer__row
+        display: flex;
+        gap: 35px;
+        @media (max-width:#{$md3}px) {
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        @media (max-width:#{$md4}px) {
+            &:first-child {
+                display: block;
+            }
+        }
+    }
+
+    &__info {    // .footer__info
+        @media (max-width:#{$md4}px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__delivery {    // .footer__delivery
+    }
+
+    &__pay {    // .footer__pay
+    }
+
+    &__box-widget {
+        max-width: 100%;
+        width: 100%;
+    }
+    &__widget {
+
+    }
+}
+
+.info-footer {
+
+    &__logo {    // .info-footer__logo
+        background: url('../img/bg_footer_logo.jpg');
+        padding: 20px 20px 45px 20px;
+        margin-bottom: 30px;
+        width: 150px;
+    }
+
+    &__phones {    // .info-footer__phones
+
+    }
+}
+
+.phones-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    &__svg-phone {
+        width: 25px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    &__body {    // .phones-info__body
+    }
+
+    &__item {    // .phones-info__item
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #333333;
+        padding-bottom: 10px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.delivery-footer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 320px;
+    @media (max-width:#{$md3}px) {
+        max-width: 100%;
+    }
+    &__title {    // .delivery-footer__title
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #999999;
+        margin-bottom: 10px;
+    }
+
+    &__item {    // .delivery-footer__item
+    }
+
+    &__link {    // .delivery-footer__link
+    }
+
+    &__img {    // .delivery-footer__img
+    }
+}
+
+.pay-footer {
+    display: flex;
+    gap: 25px;
+    &__img {    // .pay-footer__img
+        max-width: 36px;
+    }
+}
